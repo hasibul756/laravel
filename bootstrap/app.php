@@ -8,11 +8,11 @@ use App\Http\Middleware\CountryCheck;
 
 // Configure and create the Laravel application instance
 return Application::configure(basePath: dirname(__DIR__)) // Set the base path
-    // Configure routing paths
     ->withRouting(
-        web: __DIR__ . '/../routes/web.php', // Path to web routes
-        commands: __DIR__ . '/../routes/console.php', // Path to console commands
-        health: '/up', // Health check endpoint
+        web: __DIR__ . '/../routes/web.php',
+        api: __DIR__.'/../routes/api.php',
+        commands: __DIR__ . '/../routes/console.php',
+        health: '/up',
     )
     // Register middleware globally
     ->withMiddleware(function (Middleware $middleware) {

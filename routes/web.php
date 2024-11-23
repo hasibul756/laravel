@@ -19,13 +19,13 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::view('/test', 'test');
+// Route::view('/test', 'test');
 
-Route::get('/blade', [BladeController::class, 'index']);
+// Route::get('/blade', [BladeController::class, 'index']);
 
-Route::get('/user_form', [UserController::class, 'index']);
+// Route::get('/user_form', [UserController::class, 'index']);
 
-Route::post('/add_user', [UserController::class, 'addUser']);
+// Route::post('/add_user', [UserController::class, 'addUser']);
 
 // Route::prefix('students')->group(function () {
 //     Route::get('/show', [StudentController::class, 'show']);
